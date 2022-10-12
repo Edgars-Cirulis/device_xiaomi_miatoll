@@ -20,5 +20,8 @@ TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_miatoll
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := curtana,excalibur,gram,joyeuse,miatoll
 
+# Device sepolicy
+include device/xiaomi/miatoll-sepolicy/miatoll-sepolicy.mk
+
 # Inherit proprietary blobs
 include vendor/xiaomi/miatoll/BoardConfigVendor.mk
